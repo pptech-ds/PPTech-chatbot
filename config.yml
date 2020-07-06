@@ -1,0 +1,26 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: fr
+pipeline:
+  - name: "SpacyNLP"
+  - name: "SpacyTokenizer"
+  - name: "SpacyEntityExtractor"
+  - name: "RegexFeaturizer"
+  - name: "CountVectorsFeaturizer"
+  - name: "CRFEntityExtractor"
+  - name: "EntitySynonymMapper"
+  - name: "EmbeddingIntentClassifier"
+  - name: "modules.api_traduction.TraductionAPI"
+  - name: "modules.api_wikipedia.WikipediaAPI"
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy
+  - name: FormPolicy
+  - name: "FallbackPolicy"
+    nlu_threshold: 0.6 # Min confidence needed to accept an NLU prediction
+    core_threshold: 0.5 # Min confidence needed to accept an action prediction from Rasa Core
+    fallback_action_name: "action_incomprehension"

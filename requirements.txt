@@ -1,0 +1,16 @@
+unidecode
+bs4
+geopy
+gspread
+mailchimp3
+nltk==3.2.1
+pandas
+pytorch-transformers
+rank_bm25
+sacremoses
+scikit-learn
+scipy
+six==1.10.0
+spacy
+tensorboardX
+tqdm
