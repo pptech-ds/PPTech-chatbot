@@ -31,16 +31,16 @@ VOCAB_FILES_NAMES = {'vocab_file': 'vocab.txt'}
 PRETRAINED_VOCAB_FILES_MAP = {
     'vocab_file':
     {
-        'bert-base-multilingual-uncased-skillogs': "https://skillogs1.s3.eu-west-3.amazonaws.com/skillogs-bert-20191115-15h00/bert-base-multilingual-uncased-vocab.txt",
+        'bert-base-multilingual-uncased-pptech': "https://pptech1.s3.eu-west-3.amazonaws.com/pptech-bert-20191115-15h00/bert-base-multilingual-uncased-vocab.txt",
     }
 }
 
 PRETRAINED_POSITIONAL_EMBEDDINGS_SIZES = {
-    'bert-base-multilingual-uncased-skillogs': 512,
+    'bert-base-multilingual-uncased-pptech': 512,
 }
 
 PRETRAINED_INIT_CONFIGURATION = {
-    'bert-base-multilingual-uncased-skillogs': {'do_lower_case': True},
+    'bert-base-multilingual-uncased-pptech': {'do_lower_case': True},
 }
 
 

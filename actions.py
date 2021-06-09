@@ -195,10 +195,10 @@ class Conversation(Action):
 
 
 class TraductionAPI(Action):
-    """Requête le traducteur skillogs avec la chaîne de caractères [STR] passée par l'utilisateur vers la [LANGUE] souhaitée par la commande : "translate_[LANGUE]: [STR]"\n
+    """Requête le traducteur pptech avec la chaîne de caractères [STR] passée par l'utilisateur vers la [LANGUE] souhaitée par la commande : "translate_[LANGUE]: [STR]"\n
     Exemples : 
-    - "translate_en: Comment vas-tu ?" passera la chaîne de caractères "Comment vas-tu ?" en paramètre de la requête API au traducteur_fr2en de Skillogs,
-    - "translate_fr: How are you?" passera la chaîne de caractères "How are you?" en paramètre de la requête API au traducteur_en2fr de Skillogs.
+    - "translate_en: Comment vas-tu ?" passera la chaîne de caractères "Comment vas-tu ?" en paramètre de la requête API au traducteur_fr2en de pptech,
+    - "translate_fr: How are you?" passera la chaîne de caractères "How are you?" en paramètre de la requête API au traducteur_en2fr de pptech.
     """
 
     # attributs de classe

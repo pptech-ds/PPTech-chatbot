@@ -9,7 +9,7 @@ def request_from_db(keywords_filter_list, db_env):
 
     # construction de la requête
     request_cmd_line = (
-        'https://search-skillogs1-zrhgle3vemuqzhhs7fudth7cae.eu-west-3.es.amazonaws.com/'
+        'https://search-pptech1-zrhgle3vemuqzhhs7fudth7cae.eu-west-3.es.amazonaws.com/'
         + es_index
         + '/_search?q='
         + keywords_filter_list
@@ -48,7 +48,7 @@ def request_from_db(keywords_filter_list, db_env):
             dict_result['id'].append(res_json['hits']['hits'][i]['_source']['id'])
             dict_result['value'].append(res_json['hits']['hits'][i]['_source']['value'])
             dict_result['seed_url'].append(
-                'https://dev.app.skillogs.com/learn/' 
+                'https://dev.app.pptech.com/learn/' 
                 + str(res_json['hits']['hits'][i]['_source']['skill_id'])
                 + '/knowledge/'
                 + str(res_json['hits']['hits'][i]['_source']['knowledge_id'])

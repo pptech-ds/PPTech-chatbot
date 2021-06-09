@@ -291,8 +291,8 @@ def load_model(arg_dict):
     num_labels = len(label_list)
 
     # BERT
-    tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-uncased-skillogs', do_lower_case=True, do_basic_tokenize=True)
-    model = BertForSequenceClassification.from_pretrained('bert-base-multilingual-uncased-skillogs')
+    tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-uncased-pptech', do_lower_case=True, do_basic_tokenize=True)
+    model = BertForSequenceClassification.from_pretrained('bert-base-multilingual-uncased-pptech')
     model.to(arg_dict['device'])
 
 

@@ -34,11 +34,11 @@ from .modeling_utils_local import (WEIGHTS_NAME, CONFIG_NAME, PretrainedConfig, 
 logger = logging.getLogger(__name__)
 
 BERT_PRETRAINED_MODEL_ARCHIVE_MAP = {
-   'bert-base-multilingual-uncased-skillogs': "https://skillogs1.s3.eu-west-3.amazonaws.com/skillogs-bert-20191115-15h00/bert-base-multilingual-uncased-pytorch_model.bin",
+   'bert-base-multilingual-uncased-pptech': "https://pptech1.s3.eu-west-3.amazonaws.com/pptech-bert-20191115-15h00/bert-base-multilingual-uncased-pytorch_model.bin",
 }
 
 BERT_PRETRAINED_CONFIG_ARCHIVE_MAP = {
-    'bert-base-multilingual-uncased-skillogs': "https://skillogs1.s3.eu-west-3.amazonaws.com/skillogs-bert-20191115-15h00/bert-base-multilingual-uncased-config.json",
+    'bert-base-multilingual-uncased-pptech': "https://pptech1.s3.eu-west-3.amazonaws.com/pptech-bert-20191115-15h00/bert-base-multilingual-uncased-config.json",
 }
 
 

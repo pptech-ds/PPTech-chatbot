@@ -1,5 +1,5 @@
 sudo apt-get update && sudo apt-get -y upgrade
-mkdir -p /home/ubuntu/chatbot/chatbot_skillogs/download
+mkdir -p /home/ubuntu/chatbot/chatbot_pptech/download
 cd download
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/miniconda
