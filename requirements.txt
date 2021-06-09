@@ -3,7 +3,7 @@ bs4
 geopy
 gspread
 mailchimp3
-nltk==3.2.1
+nltk==3.4.5
 pandas
 pytorch-transformers
 rank_bm25
